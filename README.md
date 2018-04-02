@@ -18,7 +18,7 @@
 > python3.6 main.py
 
 # Start the web-server
-# python2.7 backend.py
+> python2.7 backend.py
 ```
 
 #### `secure.json`
