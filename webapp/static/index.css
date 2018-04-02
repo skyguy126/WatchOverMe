@@ -1,0 +1,100 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10;
+    height: 100px;
+    width: 175px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: -2px 2px 5px grey;
+    font-family: roboto;
+}
+
+#top-circle {
+    padding-top: 1px;
+}
+
+#top-circle-des {
+    size: 3;
+    position: relative;
+    top: -18px;
+}
+
+#bottom-circle {
+    margin-top: -5px;
+}
+
+#bottom-circle-des {
+    size: 3;
+    position: relative;
+    top: -19px;
+}
+
+#alert-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    background: #ffffff;
+    transition: opacity 0.5s ease-in;
+    -webkit-transition: opacity 0.5s ease-in;
+}
+
+#alert-overlay-box {
+    position: absolute;
+    top: 46%;
+    left: 40%;
+    width: 20%;
+    height: 8%;
+    z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+    display: table;
+    background: #ffffff;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    border-radius: 3px;
+    box-shadow: -2px 2px 5px grey;
+    font-family: roboto;
+}
+
+#alert-overlay-box-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.fadein-visibility {
+    visibility: visible !important;
+}
+
+.fadein-overlay {
+    opacity: 0.4 !important;
+}
+
+.fadein-overlay-box {
+    opacity: 1 !important;
+}

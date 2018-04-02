@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Watch Over Me</title>
+    <link rel="stylesheet" type="text/css" href="/static/index.css">
+</head>
+
+<div id="wrapper">
+    <div id="map"></div>
+    <div id="overlay">
+        <svg id="top-circle" height="50" width="50">
+            <circle cx="25" cy="25" r="15" stroke="#1c73ff" stroke-width="3" fill="#1c73ff" fill-opacity="0.35"/>
+        </svg>
+        <font id="top-circle-des"><b>Normal zone</b></font>
+        <br>
+        <svg id="bottom-circle" height="50" width="50">
+            <circle cx="25" cy="25" r="15" stroke="#FF0000" stroke-width="3" fill="#FF0000" fill-opacity="0.35"/>
+        </svg>
+        <font id="bottom-circle-des"><b>Warning zone</b></font>
+    </div>
+    <div id="alert-overlay">
+
+    </div>
+    <div id="alert-overlay-box">
+        <font id="alert-overlay-box-text"><b>Warning, zone status changed!</b></font>
+    </div>
+</div>
+
+<!-- Replace the value of the key parameter with your own API key. -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/static/index.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{google_maps_api_key}}&callback=initMap"></script>
