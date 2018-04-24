@@ -4,6 +4,7 @@
 #### [Website](http://watchoverme.net:25565/) | [Devpost](https://devpost.com/software/watch-over-me)
 
 -----
+
 ### Running
 ```shell
 # Convert training data into frequency-time matricies.
@@ -79,4 +80,4 @@ Originally we were going to use a trio of microphones to be able to triangulate 
 
 -----
 
-##### Developed for LAHacks 2018
+##### Developed for LAHacks 2018 (Winner)
